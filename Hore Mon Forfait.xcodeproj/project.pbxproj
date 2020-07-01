@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		ED6A3AFB24A2BB0E00134D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */; };
 		ED6A3AFD24A2BB0E00134D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */; };
-		ED6A3AFF24A2BB0E00134D1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFE24A2BB0E00134D1D /* ContentView.swift */; };
+		ED6A3AFF24A2BB0E00134D1D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFE24A2BB0E00134D1D /* MainView.swift */; };
 		ED6A3B0124A2BB0F00134D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B0024A2BB0F00134D1D /* Assets.xcassets */; };
 		ED6A3B0424A2BB0F00134D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B0324A2BB0F00134D1D /* Preview Assets.xcassets */; };
 		ED6A3B0724A2BB0F00134D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B0524A2BB0F00134D1D /* LaunchScreen.storyboard */; };
 		ED6A3B1224A2BB0F00134D1D /* Hore_Mon_ForfaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B1124A2BB0F00134D1D /* Hore_Mon_ForfaitTests.swift */; };
 		ED6A3B1D24A2BB0F00134D1D /* Hore_Mon_ForfaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B1C24A2BB0F00134D1D /* Hore_Mon_ForfaitUITests.swift */; };
+		ED6A3B2B24A2BD0600134D1D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2A24A2BD0600134D1D /* AccountView.swift */; };
+		ED6A3B2D24A32B9000134D1D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2C24A32B9000134D1D /* Account.swift */; };
+		ED6A3B2F24A5598100134D1D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2E24A5598100134D1D /* Network.swift */; };
+		ED6A3B3224AAAA4200134D1D /* ConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B3124AAAA4200134D1D /* ConsoView.swift */; };
+		ED6A3B3424ABF5F200134D1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED6A3AFE24A2BB0E00134D1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED6A3AFE24A2BB0E00134D1D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ED6A3B0024A2BB0F00134D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6A3B0324A2BB0F00134D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED6A3B0624A2BB0F00134D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		ED6A3B1824A2BB0F00134D1D /* Hore Mon ForfaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hore Mon ForfaitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3B1C24A2BB0F00134D1D /* Hore_Mon_ForfaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hore_Mon_ForfaitUITests.swift; sourceTree = "<group>"; };
 		ED6A3B1E24A2BB0F00134D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6A3B2A24A2BD0600134D1D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		ED6A3B2C24A32B9000134D1D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		ED6A3B2E24A5598100134D1D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		ED6A3B3124AAAA4200134D1D /* ConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoView.swift; sourceTree = "<group>"; };
+		ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,12 @@
 			children = (
 				ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */,
 				ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */,
-				ED6A3AFE24A2BB0E00134D1D /* ContentView.swift */,
+				ED6A3AFE24A2BB0E00134D1D /* MainView.swift */,
+				ED6A3B3124AAAA4200134D1D /* ConsoView.swift */,
+				ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */,
+				ED6A3B2A24A2BD0600134D1D /* AccountView.swift */,
+				ED6A3B2C24A32B9000134D1D /* Account.swift */,
+				ED6A3B2E24A5598100134D1D /* Network.swift */,
 				ED6A3B0024A2BB0F00134D1D /* Assets.xcassets */,
 				ED6A3B0524A2BB0F00134D1D /* LaunchScreen.storyboard */,
 				ED6A3B0824A2BB0F00134D1D /* Info.plist */,
@@ -267,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6A3B2D24A32B9000134D1D /* Account.swift in Sources */,
+				ED6A3B2B24A2BD0600134D1D /* AccountView.swift in Sources */,
+				ED6A3B2F24A5598100134D1D /* Network.swift in Sources */,
 				ED6A3AFB24A2BB0E00134D1D /* AppDelegate.swift in Sources */,
+				ED6A3B3424ABF5F200134D1D /* ActivityIndicator.swift in Sources */,
 				ED6A3AFD24A2BB0E00134D1D /* SceneDelegate.swift in Sources */,
-				ED6A3AFF24A2BB0E00134D1D /* ContentView.swift in Sources */,
+				ED6A3B3224AAAA4200134D1D /* ConsoView.swift in Sources */,
+				ED6A3AFF24A2BB0E00134D1D /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
