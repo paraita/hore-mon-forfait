@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
     @State private var selection = 0
-    @ObservedObject var account: Account = Account()
+    @EnvironmentObject var account: Account
  
     var body: some View {
         TabView(selection: $selection){
@@ -23,7 +24,6 @@ struct MainView: View {
                 }
             }
             .tag(0)
-            
             
             AccountView(account: account)
                 .tabItem {
@@ -39,6 +39,12 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        
+        Group {
+            MainView().colorScheme(.dark).environmentObject(Account())
+            
+            MainView().colorScheme(.light).environmentObject(Account())
+        }
+        
     }
 }

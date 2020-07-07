@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED32EEF124B1D005005863FE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2E24A5598100134D1D /* Network.swift */; };
 		ED6A3AFB24A2BB0E00134D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */; };
 		ED6A3AFD24A2BB0E00134D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */; };
 		ED6A3AFF24A2BB0E00134D1D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFE24A2BB0E00134D1D /* MainView.swift */; };
@@ -20,6 +21,24 @@
 		ED6A3B2F24A5598100134D1D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2E24A5598100134D1D /* Network.swift */; };
 		ED6A3B3224AAAA4200134D1D /* ConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B3124AAAA4200134D1D /* ConsoView.swift */; };
 		ED6A3B3424ABF5F200134D1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */; };
+		ED6A3B3B24AC743600134D1D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B3924AC743600134D1D /* Interface.storyboard */; };
+		ED6A3B3D24AC743700134D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B3C24AC743700134D1D /* Assets.xcassets */; };
+		ED6A3B4424AC743700134D1D /* Hore Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED6A3B4324AC743700134D1D /* Hore Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED6A3B4B24AC743700134D1D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4A24AC743700134D1D /* HostingController.swift */; };
+		ED6A3B4D24AC743700134D1D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4C24AC743700134D1D /* ExtensionDelegate.swift */; };
+		ED6A3B4F24AC743700134D1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4E24AC743700134D1D /* NotificationController.swift */; };
+		ED6A3B5124AC743700134D1D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B5024AC743700134D1D /* NotificationView.swift */; };
+		ED6A3B5324AC743700134D1D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B5224AC743700134D1D /* ComplicationController.swift */; };
+		ED6A3B5524AC743800134D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B5424AC743800134D1D /* Assets.xcassets */; };
+		ED6A3B5824AC743800134D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B5724AC743800134D1D /* Preview Assets.xcassets */; };
+		ED6A3B5D24AC743800134D1D /* Hore.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED6A3B3724AC743600134D1D /* Hore.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED6A3B6724ADA2D900134D1D /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B6624ADA2D900134D1D /* WatchView.swift */; };
+		ED6A3B6824ADA4A400134D1D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2C24A32B9000134D1D /* Account.swift */; };
+		ED6A3B6A24AE973300134D1D /* WatchConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B6924AE973300134D1D /* WatchConnectivityHandler.swift */; };
+		EDBA9A8924B178450064FA77 /* HMFDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */; };
+		EDBA9A8B24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */; };
+		EDBA9A8C24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */; };
+		EDBA9A8D24B17E5C0064FA77 /* HMFDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +56,46 @@
 			remoteGlobalIDString = ED6A3AF624A2BB0E00134D1D;
 			remoteInfo = "Hore Mon Forfait";
 		};
+		ED6A3B4524AC743700134D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED6A3AEF24A2BB0E00134D1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6A3B4224AC743700134D1D;
+			remoteInfo = "Hore Extension";
+		};
+		ED6A3B5B24AC743800134D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED6A3AEF24A2BB0E00134D1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6A3B3624AC743600134D1D;
+			remoteInfo = Hore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED6A3B6124AC743800134D1D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED6A3B4424AC743700134D1D /* Hore Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6A3B6524AC743800134D1D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ED6A3B5D24AC743800134D1D /* Hore.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +117,24 @@
 		ED6A3B2E24A5598100134D1D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		ED6A3B3124AAAA4200134D1D /* ConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoView.swift; sourceTree = "<group>"; };
 		ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		ED6A3B3724AC743600134D1D /* Hore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A3B3A24AC743600134D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ED6A3B3C24AC743700134D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED6A3B3E24AC743700134D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6A3B4324AC743700134D1D /* Hore Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hore Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A3B4A24AC743700134D1D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		ED6A3B4C24AC743700134D1D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ED6A3B4E24AC743700134D1D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ED6A3B5024AC743700134D1D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		ED6A3B5224AC743700134D1D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		ED6A3B5424AC743800134D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED6A3B5724AC743800134D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED6A3B5924AC743800134D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6A3B5A24AC743800134D1D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ED6A3B6624ADA2D900134D1D /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		ED6A3B6924AE973300134D1D /* WatchConnectivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityHandler.swift; sourceTree = "<group>"; };
+		EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFDateFormatter.swift; sourceTree = "<group>"; };
+		EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFProgressCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +159,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6A3B4024AC743700134D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +175,8 @@
 				ED6A3AF924A2BB0E00134D1D /* Hore Mon Forfait */,
 				ED6A3B1024A2BB0F00134D1D /* Hore Mon ForfaitTests */,
 				ED6A3B1B24A2BB0F00134D1D /* Hore Mon ForfaitUITests */,
+				ED6A3B3824AC743600134D1D /* Hore */,
+				ED6A3B4724AC743700134D1D /* Hore Extension */,
 				ED6A3AF824A2BB0E00134D1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +187,8 @@
 				ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */,
 				ED6A3B0D24A2BB0F00134D1D /* Hore Mon ForfaitTests.xctest */,
 				ED6A3B1824A2BB0F00134D1D /* Hore Mon ForfaitUITests.xctest */,
+				ED6A3B3724AC743600134D1D /* Hore.app */,
+				ED6A3B4324AC743700134D1D /* Hore Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,15 +198,15 @@
 			children = (
 				ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */,
 				ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */,
+				ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */,
+				ED6A3B6924AE973300134D1D /* WatchConnectivityHandler.swift */,
 				ED6A3AFE24A2BB0E00134D1D /* MainView.swift */,
 				ED6A3B3124AAAA4200134D1D /* ConsoView.swift */,
-				ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */,
 				ED6A3B2A24A2BD0600134D1D /* AccountView.swift */,
-				ED6A3B2C24A32B9000134D1D /* Account.swift */,
-				ED6A3B2E24A5598100134D1D /* Network.swift */,
 				ED6A3B0024A2BB0F00134D1D /* Assets.xcassets */,
 				ED6A3B0524A2BB0F00134D1D /* LaunchScreen.storyboard */,
 				ED6A3B0824A2BB0F00134D1D /* Info.plist */,
+				EDBA9A8724B177A90064FA77 /* common */,
 				ED6A3B0224A2BB0F00134D1D /* Preview Content */,
 			);
 			path = "Hore Mon Forfait";
@@ -151,6 +238,52 @@
 			path = "Hore Mon ForfaitUITests";
 			sourceTree = "<group>";
 		};
+		ED6A3B3824AC743600134D1D /* Hore */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A3B3924AC743600134D1D /* Interface.storyboard */,
+				ED6A3B3C24AC743700134D1D /* Assets.xcassets */,
+				ED6A3B3E24AC743700134D1D /* Info.plist */,
+			);
+			path = Hore;
+			sourceTree = "<group>";
+		};
+		ED6A3B4724AC743700134D1D /* Hore Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A3B6624ADA2D900134D1D /* WatchView.swift */,
+				ED6A3B4A24AC743700134D1D /* HostingController.swift */,
+				ED6A3B4C24AC743700134D1D /* ExtensionDelegate.swift */,
+				ED6A3B4E24AC743700134D1D /* NotificationController.swift */,
+				ED6A3B5024AC743700134D1D /* NotificationView.swift */,
+				ED6A3B5224AC743700134D1D /* ComplicationController.swift */,
+				ED6A3B5424AC743800134D1D /* Assets.xcassets */,
+				ED6A3B5924AC743800134D1D /* Info.plist */,
+				ED6A3B5A24AC743800134D1D /* PushNotificationPayload.apns */,
+				ED6A3B5624AC743800134D1D /* Preview Content */,
+			);
+			path = "Hore Extension";
+			sourceTree = "<group>";
+		};
+		ED6A3B5624AC743800134D1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A3B5724AC743800134D1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDBA9A8724B177A90064FA77 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A3B2E24A5598100134D1D /* Network.swift */,
+				ED6A3B2C24A32B9000134D1D /* Account.swift */,
+				EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */,
+				EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,10 +294,12 @@
 				ED6A3AF324A2BB0E00134D1D /* Sources */,
 				ED6A3AF424A2BB0E00134D1D /* Frameworks */,
 				ED6A3AF524A2BB0E00134D1D /* Resources */,
+				ED6A3B6524AC743800134D1D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED6A3B5C24AC743800134D1D /* PBXTargetDependency */,
 			);
 			name = "Hore Mon Forfait";
 			productName = "Hore Mon Forfait";
@@ -207,6 +342,40 @@
 			productReference = ED6A3B1824A2BB0F00134D1D /* Hore Mon ForfaitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ED6A3B3624AC743600134D1D /* Hore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6A3B6224AC743800134D1D /* Build configuration list for PBXNativeTarget "Hore" */;
+			buildPhases = (
+				ED6A3B3524AC743600134D1D /* Resources */,
+				ED6A3B6124AC743800134D1D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6A3B4624AC743700134D1D /* PBXTargetDependency */,
+			);
+			name = Hore;
+			productName = Hore;
+			productReference = ED6A3B3724AC743600134D1D /* Hore.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ED6A3B4224AC743700134D1D /* Hore Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6A3B5E24AC743800134D1D /* Build configuration list for PBXNativeTarget "Hore Extension" */;
+			buildPhases = (
+				ED6A3B3F24AC743700134D1D /* Sources */,
+				ED6A3B4024AC743700134D1D /* Frameworks */,
+				ED6A3B4124AC743700134D1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hore Extension";
+			productName = "Hore Extension";
+			productReference = ED6A3B4324AC743700134D1D /* Hore Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,6 +397,12 @@
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = ED6A3AF624A2BB0E00134D1D;
 					};
+					ED6A3B3624AC743600134D1D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					ED6A3B4224AC743700134D1D = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = ED6A3AF224A2BB0E00134D1D /* Build configuration list for PBXProject "Hore Mon Forfait" */;
@@ -246,6 +421,8 @@
 				ED6A3AF624A2BB0E00134D1D /* Hore Mon Forfait */,
 				ED6A3B0C24A2BB0F00134D1D /* Hore Mon ForfaitTests */,
 				ED6A3B1724A2BB0F00134D1D /* Hore Mon ForfaitUITests */,
+				ED6A3B3624AC743600134D1D /* Hore */,
+				ED6A3B4224AC743700134D1D /* Hore Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +452,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6A3B3524AC743600134D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6A3B3D24AC743700134D1D /* Assets.xcassets in Resources */,
+				ED6A3B3B24AC743600134D1D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6A3B4124AC743700134D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6A3B5824AC743800134D1D /* Preview Assets.xcassets in Resources */,
+				ED6A3B5524AC743800134D1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,13 +477,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBA9A8924B178450064FA77 /* HMFDateFormatter.swift in Sources */,
 				ED6A3B2D24A32B9000134D1D /* Account.swift in Sources */,
 				ED6A3B2B24A2BD0600134D1D /* AccountView.swift in Sources */,
 				ED6A3B2F24A5598100134D1D /* Network.swift in Sources */,
 				ED6A3AFB24A2BB0E00134D1D /* AppDelegate.swift in Sources */,
 				ED6A3B3424ABF5F200134D1D /* ActivityIndicator.swift in Sources */,
+				EDBA9A8B24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */,
 				ED6A3AFD24A2BB0E00134D1D /* SceneDelegate.swift in Sources */,
 				ED6A3B3224AAAA4200134D1D /* ConsoView.swift in Sources */,
+				ED6A3B6A24AE973300134D1D /* WatchConnectivityHandler.swift in Sources */,
 				ED6A3AFF24A2BB0E00134D1D /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +507,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6A3B3F24AC743700134D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED32EEF124B1D005005863FE /* Network.swift in Sources */,
+				EDBA9A8D24B17E5C0064FA77 /* HMFDateFormatter.swift in Sources */,
+				EDBA9A8C24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */,
+				ED6A3B6824ADA4A400134D1D /* Account.swift in Sources */,
+				ED6A3B4B24AC743700134D1D /* HostingController.swift in Sources */,
+				ED6A3B4F24AC743700134D1D /* NotificationController.swift in Sources */,
+				ED6A3B4D24AC743700134D1D /* ExtensionDelegate.swift in Sources */,
+				ED6A3B5124AC743700134D1D /* NotificationView.swift in Sources */,
+				ED6A3B5324AC743700134D1D /* ComplicationController.swift in Sources */,
+				ED6A3B6724ADA2D900134D1D /* WatchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -322,6 +537,16 @@
 			target = ED6A3AF624A2BB0E00134D1D /* Hore Mon Forfait */;
 			targetProxy = ED6A3B1924A2BB0F00134D1D /* PBXContainerItemProxy */;
 		};
+		ED6A3B4624AC743700134D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6A3B4224AC743700134D1D /* Hore Extension */;
+			targetProxy = ED6A3B4524AC743700134D1D /* PBXContainerItemProxy */;
+		};
+		ED6A3B5C24AC743800134D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6A3B3624AC743600134D1D /* Hore */;
+			targetProxy = ED6A3B5B24AC743800134D1D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -331,6 +556,14 @@
 				ED6A3B0624A2BB0F00134D1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6A3B3924AC743600134D1D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6A3B3A24AC743600134D1D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -466,7 +699,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,7 +719,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -574,6 +807,92 @@
 			};
 			name = Release;
 		};
+		ED6A3B5F24AC743800134D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hore Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hore Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ED6A3B6024AC743800134D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hore Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hore Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		ED6A3B6324AC743800134D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				IBSC_MODULE = Hore_Extension;
+				INFOPLIST_FILE = Hore/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ED6A3B6424AC743800134D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				IBSC_MODULE = Hore_Extension;
+				INFOPLIST_FILE = Hore/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,6 +928,24 @@
 			buildConfigurations = (
 				ED6A3B2824A2BB0F00134D1D /* Debug */,
 				ED6A3B2924A2BB0F00134D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6A3B5E24AC743800134D1D /* Build configuration list for PBXNativeTarget "Hore Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6A3B5F24AC743800134D1D /* Debug */,
+				ED6A3B6024AC743800134D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6A3B6224AC743800134D1D /* Build configuration list for PBXNativeTarget "Hore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6A3B6324AC743800134D1D /* Debug */,
+				ED6A3B6424AC743800134D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,10 +8,16 @@
 
 import UIKit
 import SwiftUI
+import os
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var account: Account = Account()
+    var watchConnectivityHandler: WatchConnectivityHandler = WatchConnectivityHandler()
+    var client: APIConsoRequest {
+        return APIConsoRequest(msisdn: self.account.numTel, password: self.account.password)
+    }
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = MainView()
+        let contentView = MainView().environmentObject(account)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -51,6 +57,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+
+        os_log("-------------- sceneWillEnterForeground --------------")
+        self.client.dispatch(onSuccess: {
+            response in
+            print(response)
+            self.account.update(with: response)
+            self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
+        }, onFailure: {
+            response, err in
+            print(err)
+        })
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: Response structs
+// MARK: ---------- Response structs ----------
 
 struct APIConsoRequest: Codable {
     let content: String = "conso"
@@ -35,7 +35,7 @@ struct APIConsoSuccessResponse: Codable {
     let update_date: Double
 }
 
-// MARK: API
+// MARK:  ---------- API ----------
 
 protocol APIEndpoint {
     func endpoint() -> String
@@ -65,13 +65,15 @@ extension APIConsoRequest: APIEndpoint {
     func dispatch(
         onSuccess successHandler: @escaping ((_: APIConsoSuccessResponse) -> Void),
         onFailure failureHandler: @escaping ((_: APIRequest.ErrorResponse?, _: Error) -> Void)) {
-        APIRequest.post(request: self, onSuccess: successHandler, onError: failureHandler)
+        APIRequest.post(username: msisdn, password:password, request: self, onSuccess: successHandler, onError: failureHandler)
     }
 }
 
 extension APIRequest {
     
     public static func post<R: Codable & APIEndpoint, T: Codable, E: Codable>(
+        username: String,
+        password: String,
         request: R,
         onSuccess: @escaping ((_: T) -> Void),
         onError: @escaping ((_: E?, _: Error) -> Void)) {
@@ -82,7 +84,7 @@ extension APIRequest {
         }
         endpointRequest.httpMethod = "POST"
         endpointRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        endpointRequest.httpBody = "content=conso&msisdn=87344266&password=8CnXXPRPXykf".data(using: .utf8)
+        endpointRequest.httpBody = "content=conso&msisdn=\(username)&password=\(password)".data(using: .utf8)
 
         URLSession.shared.dataTask(
             with: endpointRequest,
