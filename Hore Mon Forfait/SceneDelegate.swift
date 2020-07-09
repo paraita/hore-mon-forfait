@@ -13,7 +13,7 @@ import os
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var account: Account = Account()
+    var account: Account = Account.sharedInstance
     var watchConnectivityHandler: WatchConnectivityHandler = WatchConnectivityHandler()
     var client: APIConsoRequest {
         return APIConsoRequest(msisdn: self.account.numTel, password: self.account.password)

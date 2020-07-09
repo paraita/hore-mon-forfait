@@ -7,7 +7,7 @@
 //
 
 import ClockKit
-
+import os
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -32,8 +32,20 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        if complication.family == .graphicCircular {
+            os_log("getCurrentTimelineEntry")
+            let account = Account.sharedInstance
+            let template = CLKComplicationTemplateGraphicCircularClosedGaugeText()
+            let remainingConso: Float = 1.0 - account.consoProgress
+            
+            print("remainingConso: \(remainingConso * 100.0)%")
+            template.centerTextProvider = CLKSimpleTextProvider(text: "\(remainingConso * 100.0)")
+            
+            let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: remainingConso)
+            template.gaugeProvider = gauge
+            os_log("complication updated")
+            handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {

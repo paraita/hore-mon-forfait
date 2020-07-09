@@ -111,7 +111,8 @@ class Account: ObservableObject, Codable {
         updateDate = try container.decode(Date.self, forKey: .updateDate)
     }
     
-    init() {
+    // TODO: utiliser le singleton dans toutes les classes appellantes
+    private init() {
         self.numTel = UserDefaults.standard.object(forKey: "numTel") as? String ?? ""
         self.password = UserDefaults.standard.object(forKey: "password") as? String ?? ""
         self.isConnected = UserDefaults.standard.object(forKey: "isConnected") as? Bool ?? false

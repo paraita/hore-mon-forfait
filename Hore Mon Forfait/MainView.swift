@@ -41,9 +41,9 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
-            MainView().colorScheme(.dark).environmentObject(Account())
+            MainView().colorScheme(.dark).environmentObject(Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
             
-            MainView().colorScheme(.light).environmentObject(Account())
+            MainView().colorScheme(.light).environmentObject(Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
         }
         
     }

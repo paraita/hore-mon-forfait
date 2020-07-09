@@ -14,7 +14,7 @@ import os
 
 class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
     
-    @ObservedObject var account: Account = Account()
+    @ObservedObject var account: Account = Account.sharedInstance
     
     override var body: WatchView {
         return WatchView(account: account)
@@ -28,13 +28,14 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
             session.delegate = self
             session.activate()
         }
-        NotificationCenter.default.addObserver(self, selector: #selector(notifyForRefresh), name: NSNotification.Name("update"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notifyForRefresh), name: NSNotification.Name("update-ta-race"), object: nil)
     }
     
     @objc func notifyForRefresh() {
         print("NOTIFIED !!!")
         print("consumed: \(account.consumed)")
         print("consoProgress: \(account.consoProgress)")
+        print("restant: \(1.0 - account.consoProgress)")
         self.setNeedsBodyUpdate()
     }
     
@@ -47,10 +48,6 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
         let data = applicationContext["account"] as! Data
         let account = try! JSONDecoder().decode(Account.self, from: data)
         DispatchQueue.main.async {
-            print("recu numTel: \(account.numTel)")
-            print("recu password: \(account.password)")
-            print("self numTel: \(self.account.numTel)")
-            print("self password: \(self.account.password)")
             self.account.numTel = account.numTel
             self.account.password = account.password
             self.account.consumed = account.consumed
@@ -59,9 +56,6 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
             self.account.remaining = account.remaining
             self.account.updateDate = account.updateDate
             self.setNeedsBodyUpdate()
-            print("apres les modifs sur la montre")
-            print("self numTel: \(self.account.numTel)")
-            print("self password: \(self.account.password)")
         }
     }
 }

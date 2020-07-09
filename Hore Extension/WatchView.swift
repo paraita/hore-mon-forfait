@@ -32,7 +32,6 @@ struct WatchView: View {
                     Text(String(format: "Tu as consommé %.1f Go", account.consumed / 1024.0))
                     Text(String(format: "Il te reste %.1f Go", account.remaining / 1024.0))
                     Text("numTel: \(account.numTel)")
-                    Text("password: \(account.password)")
                 }
                 Divider()
                 Text("Dernière maj le \(dateFormatter.string(from: account.updateDate))")
@@ -43,16 +42,16 @@ struct WatchView: View {
             self.client.dispatch(onSuccess: {
                 response in
                 os_log("fetch vini depuis la watch réussi")
-                print(response)
                 self.account.update(with: response)
+                let CLKServer = CLKComplicationServer.sharedInstance()
+                for complication in CLKServer.activeComplications ?? [] {
+                    CLKServer.reloadTimeline(for: complication)
+                }
             }, onFailure: {
                 response, err in
                 os_log("erreur lors du fetch")
                 print(err)
             })
-            print("on appear (watch)")
-            print("numTel: \(self.account.numTel)")
-            print("password: \(self.account.password)")
         }
     }
 }
