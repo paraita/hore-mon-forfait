@@ -39,7 +39,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let remainingConso: Float = 1.0 - account.consoProgress
             
             print("remainingConso: \(remainingConso * 100.0)%")
-            template.centerTextProvider = CLKSimpleTextProvider(text: "\(remainingConso * 100.0)")
+            template.centerTextProvider = CLKSimpleTextProvider(text: "4G")
             
             let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: remainingConso)
             template.gaugeProvider = gauge

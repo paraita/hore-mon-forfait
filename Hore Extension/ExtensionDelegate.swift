@@ -50,9 +50,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             response in
             os_log("fetch vini depuis la watch réussi (applicationDidBecomeActive)")
             print(response)
-            account.consumed = Double.random(in: 0...10000)
-            account.credit = 10000
-            account.remaining = account.credit - account.consumed
+            account.update(with: response)
+            //account.consumed = Double.random(in: 0...10000)
+            //account.credit = 10000
+            //account.remaining = account.credit - account.consumed
             print("applicationDidBecomeActive")
             print("consumed: \(account.consumed)")
             print("consoProgress: \(account.consoProgress)")
@@ -87,9 +88,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                     response in
                     os_log("fetch vini depuis la watch réussi (scheduleBackgroundRefreshTasks)")
                     print(response)
-                    account.consumed = Double.random(in: 0...10000)
-                    account.credit = 10000
-                    account.remaining = account.credit - account.consumed
+                    account.update(with: response)
+                    //account.consumed = Double.random(in: 0...10000)
+                    //account.credit = 10000
+                    //account.remaining = account.credit - account.consumed
                     print("scheduleBackgroundRefreshTasks")
                     print("consumed: \(account.consumed)")
                     print("consoProgress: \(account.consoProgress)")

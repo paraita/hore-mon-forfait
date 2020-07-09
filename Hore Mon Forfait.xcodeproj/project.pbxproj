@@ -133,6 +133,7 @@
 		ED6A3B5A24AC743800134D1D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		ED6A3B6624ADA2D900134D1D /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		ED6A3B6924AE973300134D1D /* WatchConnectivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityHandler.swift; sourceTree = "<group>"; };
+		EDB1659A24B7CE4C00AC0A2F /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
 		EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFDateFormatter.swift; sourceTree = "<group>"; };
 		EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFProgressCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +197,7 @@
 		ED6A3AF924A2BB0E00134D1D /* Hore Mon Forfait */ = {
 			isa = PBXGroup;
 			children = (
+				EDB1659A24B7CE4C00AC0A2F /* Hore Mon Forfait.entitlements */,
 				ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */,
 				ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */,
 				ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */,
@@ -687,6 +689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Mon Forfait/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;
@@ -707,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Mon Forfait/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;

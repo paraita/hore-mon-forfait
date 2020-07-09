@@ -47,11 +47,11 @@ struct ConsoView: View {
                         self.client.dispatch(onSuccess: {
                             response in
                             print(response)
-                            //self.account.update(with: response)
+                            self.account.update(with: response)
                             
-                            self.account.consumed = Double.random(in: 0...10000)
-                            self.account.credit = 10000
-                            self.account.remaining = self.account.credit - self.account.consumed
+                            //self.account.consumed = Double.random(in: 0...10000)
+                            //self.account.credit = 10000
+                            //self.account.remaining = self.account.credit - self.account.consumed
                             
                             self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                             self.reloading = false
@@ -81,11 +81,12 @@ struct ConsoView: View {
             self.client.dispatch(onSuccess: {
                 response in
                 print(response)
-                //self.account.update(with: response)
+                self.account.update(with: response)
                 
-                self.account.consumed = Double.random(in: 0...10000)
-                self.account.credit = 10000
-                self.account.remaining = self.account.credit - self.account.consumed
+                // mock
+                //self.account.consumed = Double.random(in: 0...10000)
+                //self.account.credit = 10000
+                //self.account.remaining = self.account.credit - self.account.consumed
                 
                 
                 self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
