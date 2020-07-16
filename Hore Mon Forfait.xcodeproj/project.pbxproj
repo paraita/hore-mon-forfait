@@ -73,6 +73,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		ED1EB68724B7D5EB00F19F6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED6A3B6124AC743800134D1D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +108,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED1EB67824B7D5EB00F19F6E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +181,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED1EB67724B7D5EB00F19F6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED1EB67824B7D5EB00F19F6E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED6A3AEE24A2BB0E00134D1D = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +197,7 @@
 				ED6A3B1B24A2BB0F00134D1D /* Hore Mon ForfaitUITests */,
 				ED6A3B3824AC743600134D1D /* Hore */,
 				ED6A3B4724AC743700134D1D /* Hore Extension */,
+				ED1EB67724B7D5EB00F19F6E /* Frameworks */,
 				ED6A3AF824A2BB0E00134D1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -297,6 +317,7 @@
 				ED6A3AF424A2BB0E00134D1D /* Frameworks */,
 				ED6A3AF524A2BB0E00134D1D /* Resources */,
 				ED6A3B6524AC743800134D1D /* Embed Watch Content */,
+				ED1EB68724B7D5EB00F19F6E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);

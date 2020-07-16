@@ -31,7 +31,6 @@ struct WatchView: View {
                     Text("Ligne \(account.numTel)")
                     Text(String(format: "Tu as consommé %.1f Go", account.consumed / 1024.0))
                     Text(String(format: "Il te reste %.1f Go", account.remaining / 1024.0))
-                    Text("numTel: \(account.numTel)")
                 }
                 Divider()
                 Text("Dernière maj le \(dateFormatter.string(from: account.updateDate))")
