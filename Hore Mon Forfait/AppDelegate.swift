@@ -8,6 +8,7 @@
 
 import UIKit
 //import Intents
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

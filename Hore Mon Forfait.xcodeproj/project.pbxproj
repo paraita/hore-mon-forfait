@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40155215ED9756AB4940785B /* Pods_Hore_Mon_ForfaitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572002D4C806576C11C72A26 /* Pods_Hore_Mon_ForfaitTests.framework */; };
+		8F1FDFF5A0DFB22B1810DE2C /* Pods_Hore_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976DC7FEE66E1CD40C17429 /* Pods_Hore_Extension.framework */; };
+		BCD29FA184FEA2B64985DB9B /* Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DADA6DAF3B24A069FF85ED /* Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework */; };
+		DEFF432D72AB09556D51E7AF /* Pods_Hore_Mon_Forfait.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D0765B1DFF7A8D9A80143 /* Pods_Hore_Mon_Forfait.framework */; };
 		ED32EEF124B1D005005863FE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2E24A5598100134D1D /* Network.swift */; };
 		ED6A3AFB24A2BB0E00134D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */; };
 		ED6A3AFD24A2BB0E00134D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */; };
@@ -108,6 +112,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17DADA6DAF3B24A069FF85ED /* Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232D14B29806FCFD1C9958F6 /* Pods-Hore Mon Forfait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait.debug.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait/Pods-Hore Mon Forfait.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE72267C2561E61947591A0 /* Pods-Hore Mon ForfaitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon ForfaitTests.debug.xcconfig"; path = "Target Support Files/Pods-Hore Mon ForfaitTests/Pods-Hore Mon ForfaitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		572002D4C806576C11C72A26 /* Pods_Hore_Mon_ForfaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hore_Mon_ForfaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709D0765B1DFF7A8D9A80143 /* Pods_Hore_Mon_Forfait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hore_Mon_Forfait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E46E9CECC976506C8CE4FA /* Pods-Hore Mon ForfaitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon ForfaitTests.release.xcconfig"; path = "Target Support Files/Pods-Hore Mon ForfaitTests/Pods-Hore Mon ForfaitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A373B27C8B77B501F8AD67D6 /* Pods-Hore Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Extension.debug.xcconfig"; path = "Target Support Files/Pods-Hore Extension/Pods-Hore Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		A4DBE43508C192C7ED0E59AD /* Pods-Hore Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Extension.release.xcconfig"; path = "Target Support Files/Pods-Hore Extension/Pods-Hore Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D2CF209CA57F53942D539215 /* Pods-Hore Mon Forfait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait.release.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait/Pods-Hore Mon Forfait.release.xcconfig"; sourceTree = "<group>"; };
+		DE9D9A4A8E511724FC7B3B17 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6CC402B37BFB5A2602364E4 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ED1EB67824B7D5EB00F19F6E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,13 +162,22 @@
 		EDB1659A24B7CE4C00AC0A2F /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
 		EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFDateFormatter.swift; sourceTree = "<group>"; };
 		EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFProgressCircle.swift; sourceTree = "<group>"; };
+		F976DC7FEE66E1CD40C17429 /* Pods_Hore_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hore_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EA48E6E6BF102DAD6C6ABC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED6A3AF424A2BB0E00134D1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFF432D72AB09556D51E7AF /* Pods_Hore_Mon_Forfait.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40155215ED9756AB4940785B /* Pods_Hore_Mon_ForfaitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD29FA184FEA2B64985DB9B /* Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,16 +201,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1FDFF5A0DFB22B1810DE2C /* Pods_Hore_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A455D9582F7076381823B84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A373B27C8B77B501F8AD67D6 /* Pods-Hore Extension.debug.xcconfig */,
+				A4DBE43508C192C7ED0E59AD /* Pods-Hore Extension.release.xcconfig */,
+				232D14B29806FCFD1C9958F6 /* Pods-Hore Mon Forfait.debug.xcconfig */,
+				D2CF209CA57F53942D539215 /* Pods-Hore Mon Forfait.release.xcconfig */,
+				DE9D9A4A8E511724FC7B3B17 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig */,
+				E6CC402B37BFB5A2602364E4 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig */,
+				4AE72267C2561E61947591A0 /* Pods-Hore Mon ForfaitTests.debug.xcconfig */,
+				A0E46E9CECC976506C8CE4FA /* Pods-Hore Mon ForfaitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED1EB67724B7D5EB00F19F6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED1EB67824B7D5EB00F19F6E /* IntentsUI.framework */,
+				F976DC7FEE66E1CD40C17429 /* Pods_Hore_Extension.framework */,
+				709D0765B1DFF7A8D9A80143 /* Pods_Hore_Mon_Forfait.framework */,
+				17DADA6DAF3B24A069FF85ED /* Pods_Hore_Mon_Forfait_Hore_Mon_ForfaitUITests.framework */,
+				572002D4C806576C11C72A26 /* Pods_Hore_Mon_ForfaitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +246,7 @@
 				ED6A3B4724AC743700134D1D /* Hore Extension */,
 				ED1EB67724B7D5EB00F19F6E /* Frameworks */,
 				ED6A3AF824A2BB0E00134D1D /* Products */,
+				4A455D9582F7076381823B84 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,11 +361,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED6A3B2124A2BB0F00134D1D /* Build configuration list for PBXNativeTarget "Hore Mon Forfait" */;
 			buildPhases = (
+				5E97F8249516043BA86F5AF4 /* [CP] Check Pods Manifest.lock */,
 				ED6A3AF324A2BB0E00134D1D /* Sources */,
 				ED6A3AF424A2BB0E00134D1D /* Frameworks */,
 				ED6A3AF524A2BB0E00134D1D /* Resources */,
 				ED6A3B6524AC743800134D1D /* Embed Watch Content */,
 				ED1EB68724B7D5EB00F19F6E /* Embed App Extensions */,
+				1E2B747B31C7100319BD4899 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +383,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED6A3B2424A2BB0F00134D1D /* Build configuration list for PBXNativeTarget "Hore Mon ForfaitTests" */;
 			buildPhases = (
+				83A3AA73AE747C3F74A2F52B /* [CP] Check Pods Manifest.lock */,
 				ED6A3B0924A2BB0F00134D1D /* Sources */,
 				ED6A3B0A24A2BB0F00134D1D /* Frameworks */,
 				ED6A3B0B24A2BB0F00134D1D /* Resources */,
@@ -351,9 +402,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED6A3B2724A2BB0F00134D1D /* Build configuration list for PBXNativeTarget "Hore Mon ForfaitUITests" */;
 			buildPhases = (
+				31AC9206DBBA54EC0DD47F93 /* [CP] Check Pods Manifest.lock */,
 				ED6A3B1424A2BB0F00134D1D /* Sources */,
 				ED6A3B1524A2BB0F00134D1D /* Frameworks */,
 				ED6A3B1624A2BB0F00134D1D /* Resources */,
+				B09D227B669D31892CF3E594 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,6 +424,7 @@
 			buildPhases = (
 				ED6A3B3524AC743600134D1D /* Resources */,
 				ED6A3B6124AC743800134D1D /* Embed App Extensions */,
+				EA48E6E6BF102DAD6C6ABC59 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,6 +440,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED6A3B5E24AC743800134D1D /* Build configuration list for PBXNativeTarget "Hore Extension" */;
 			buildPhases = (
+				517357F539DDF0D88ECCA80D /* [CP] Check Pods Manifest.lock */,
 				ED6A3B3F24AC743700134D1D /* Sources */,
 				ED6A3B4024AC743700134D1D /* Frameworks */,
 				ED6A3B4124AC743700134D1D /* Resources */,
@@ -494,6 +549,131 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E2B747B31C7100319BD4899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait/Pods-Hore Mon Forfait-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait/Pods-Hore Mon Forfait-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait/Pods-Hore Mon Forfait-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31AC9206DBBA54EC0DD47F93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		517357F539DDF0D88ECCA80D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hore Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E97F8249516043BA86F5AF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hore Mon Forfait-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83A3AA73AE747C3F74A2F52B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hore Mon ForfaitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09D227B669D31892CF3E594 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED6A3AF324A2BB0E00134D1D /* Sources */ = {
@@ -708,6 +888,7 @@
 		};
 		ED6A3B2224A2BB0F00134D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 232D14B29806FCFD1C9958F6 /* Pods-Hore Mon Forfait.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
@@ -729,6 +910,7 @@
 		};
 		ED6A3B2324A2BB0F00134D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2CF209CA57F53942D539215 /* Pods-Hore Mon Forfait.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
@@ -750,6 +932,7 @@
 		};
 		ED6A3B2524A2BB0F00134D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE72267C2561E61947591A0 /* Pods-Hore Mon ForfaitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -772,6 +955,7 @@
 		};
 		ED6A3B2624A2BB0F00134D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E46E9CECC976506C8CE4FA /* Pods-Hore Mon ForfaitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -794,6 +978,7 @@
 		};
 		ED6A3B2824A2BB0F00134D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9D9A4A8E511724FC7B3B17 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -814,6 +999,7 @@
 		};
 		ED6A3B2924A2BB0F00134D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CC402B37BFB5A2602364E4 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -834,6 +1020,7 @@
 		};
 		ED6A3B5F24AC743800134D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A373B27C8B77B501F8AD67D6 /* Pods-Hore Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -858,6 +1045,7 @@
 		};
 		ED6A3B6024AC743800134D1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DBE43508C192C7ED0E59AD /* Pods-Hore Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
