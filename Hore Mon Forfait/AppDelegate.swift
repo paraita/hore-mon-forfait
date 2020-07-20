@@ -10,6 +10,7 @@ import UIKit
 import BackgroundTasks
 import os
 //import Intents
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
