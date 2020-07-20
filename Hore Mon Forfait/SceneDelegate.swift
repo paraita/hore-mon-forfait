@@ -57,13 +57,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
-
-        os_log("-------------- sceneWillEnterForeground --------------")
         self.client.dispatch(onSuccess: {
             response in
-            print(response)
             self.account.update(with: response)
             self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
         }, onFailure: {

@@ -23,7 +23,7 @@ class WatchConnectivityHandler: NSObject, WCSessionDelegate {
     }
     
     func sendStuffToTheWatch(_ account: Account) {
-        os_log("Sending data to the watch...")
+        os_log("watch synchronization in progress", type: .debug)
         if WCSession.isSupported() {
             self.session.activate()
             
@@ -37,22 +37,19 @@ class WatchConnectivityHandler: NSObject, WCSessionDelegate {
                     }
                 }
                 else {
-                    os_log("cancelled (no paired watch session)")
+                    os_log("No paired watch detected", type: .debug)
                 }
             }
         }
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        os_log("activation did complete")
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
-        os_log("session became inactive")
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
-        os_log("session deactivated")
     }
     
     

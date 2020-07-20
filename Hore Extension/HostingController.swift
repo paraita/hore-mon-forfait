@@ -23,7 +23,7 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
     override init() {
         super.init()
         if WCSession.isSupported() {
-            print("WCSession supported")
+            os_log("WCSession enabled", type: .debug)
             let session = WCSession.default
             session.delegate = self
             session.activate()
@@ -32,10 +32,6 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
     }
     
     @objc func notifyForRefresh() {
-        print("NOTIFIED !!!")
-        print("consumed: \(account.consumed)")
-        print("consoProgress: \(account.consoProgress)")
-        print("restant: \(1.0 - account.consoProgress)")
         self.setNeedsBodyUpdate()
     }
     
@@ -44,7 +40,7 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        os_log("reception des infos du telephone")
+        os_log("received data from the phone", type: .debug)
         let data = applicationContext["account"] as! Data
         let account = try! JSONDecoder().decode(Account.self, from: data)
         DispatchQueue.main.async {

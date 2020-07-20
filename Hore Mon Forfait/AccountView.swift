@@ -19,6 +19,7 @@ struct AccountView: View {
     
     @State var account: Account
     @State var isConnecting: Bool = false
+    @State var connectionFailed: Bool = false
     var watchConnectivityHandler: WatchConnectivityHandler = WatchConnectivityHandler()
     
     var colorText: Color = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
@@ -97,26 +98,25 @@ struct AccountView: View {
                             else {
                                 // configured
                                 self.account.isConnected = false
+                                self.connectionFailed = false
                             }
                         }
                         else {
                             // not configured
+                            self.connectionFailed = false
                             self.isConnecting = true
                             let client = APIConsoRequest(msisdn: self.account.numTel, password: self.account.password)
                             client.dispatch(onSuccess: {
                                 response in
-                                print(response)
-                                print("account:")
-                                print("numTel: \(self.account.numTel)")
-                                print("password: \(self.account.password)")
                                 self.account.update(with: response)
                                 self.account.isConnected = true
                                 self.isConnecting = false
                                 self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                             }, onFailure: {
                                 response, err in
-                                print(err)
+                                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
                                 self.isConnecting = false
+                                self.connectionFailed = true
                             })
                             
                             // ----------------------------- MOCK ------------------------------------
@@ -167,8 +167,14 @@ struct AccountView: View {
                             }
                         }
                        }
-                    }.padding().disabled(self.isConnecting)
+                    }
+                    .padding()
+                    .disabled(self.isConnecting)
+                    .alert(isPresented: self.$connectionFailed) {
+                        Alert(title: Text("Oups !"), message: Text("La connexion a échouée ! Veuillez vérifier votre identifiant et mot de passe"), dismissButton: .default(Text("Ok")))
+                        }
                     Spacer()
+                    
                 }
             }
         }

@@ -40,7 +40,7 @@ struct WatchView: View {
         .onAppear {
             self.client.dispatch(onSuccess: {
                 response in
-                os_log("fetch vini depuis la watch réussi")
+                os_log("fetching data from Vini successful", type: .debug)
                 self.account.update(with: response)
                 let CLKServer = CLKComplicationServer.sharedInstance()
                 for complication in CLKServer.activeComplications ?? [] {
@@ -48,8 +48,7 @@ struct WatchView: View {
                 }
             }, onFailure: {
                 response, err in
-                os_log("erreur lors du fetch")
-                print(err)
+                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
             })
         }
     }

@@ -33,17 +33,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         if complication.family == .graphicCircular {
-            os_log("getCurrentTimelineEntry")
             let account = Account.sharedInstance
             let template = CLKComplicationTemplateGraphicCircularClosedGaugeText()
             let remainingConso: Float = 1.0 - account.consoProgress
-            
-            print("remainingConso: \(remainingConso * 100.0)%")
             template.centerTextProvider = CLKSimpleTextProvider(text: "4G")
             
             let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: remainingConso)
             template.gaugeProvider = gauge
-            os_log("complication updated")
+            os_log("complication updated", type: .debug)
             handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
         }
     }

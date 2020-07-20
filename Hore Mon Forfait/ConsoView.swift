@@ -46,19 +46,15 @@ struct ConsoView: View {
                         self.reloading = true
                         self.client.dispatch(onSuccess: {
                             response in
-                            print(response)
                             self.account.update(with: response)
-                            
                             //self.account.consumed = Double.random(in: 0...10000)
                             //self.account.credit = 10000
                             //self.account.remaining = self.account.credit - self.account.consumed
-                            
                             self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                             self.reloading = false
                         }, onFailure: {
                             response, err in
-                            os_log("erreur lors du fetch vini (coté telephone)")
-                            print(err)
+                            os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
                             self.reloading = false
                         })
                     }, label: {
@@ -80,20 +76,16 @@ struct ConsoView: View {
         }.onAppear {
             self.client.dispatch(onSuccess: {
                 response in
-                print(response)
                 self.account.update(with: response)
-                
                 // mock
                 //self.account.consumed = Double.random(in: 0...10000)
                 //self.account.credit = 10000
                 //self.account.remaining = self.account.credit - self.account.consumed
-                
-                
                 self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                 self.reloading = false
             }, onFailure: {
                 response, err in
-                print(err)
+                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
                 self.reloading = false
             })
         }
