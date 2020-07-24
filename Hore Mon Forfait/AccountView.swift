@@ -67,7 +67,7 @@ struct AccountView: View {
                     self.profilePic.clipShape(Circle()).padding(.top, -120).shadow(radius: 10)
                     
                     HStack {
-                        TextField("N° tél", text: self.$account.numTel)
+                        TextField("N° tél", text: self.$account.numTel).keyboardType(.numberPad)
                             .padding()
                         Image(systemName: "phone")
                             .imageScale(.large)

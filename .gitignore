@@ -192,3 +192,7 @@ zsdoc/data
 !/tests/_output/.gitkeep
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,carthage,cocoapods,macos,git,zsh,swift
+
+# Ignore the admob credential file
+admob.id
+

@@ -73,6 +73,7 @@ struct ConsoView: View {
             Text("Ligne \(self.account.numTel)").font(.headline)
             Text("Dernière maj le \(self.dateFormatter.string(from: self.account.updateDate))").italic().multilineTextAlignment(.center).font(.caption)
             Spacer()
+            AdBanner()
         }.onAppear {
             self.client.dispatch(onSuccess: {
                 response in
@@ -96,7 +97,12 @@ struct ConsoView: View {
             
             VStack {
                 VStack(alignment: .center) {
-                    Text("Ia'orana dans Hore Mon Forfait, l'app pour surveiller ton forfait !\n\nConnectes-toi pour voir l'état de ton forfait !").font(.title).multilineTextAlignment(.center)
+                    Text("Ia'orana dans Hore Mon Forfait, l'app pour surveiller ton forfait !").font(.title).multilineTextAlignment(.center)
+                    Spacer()
+                    Text("Attention ! Cette app ne fonctionnera qu'avec un forfait Vini OPEN !").font(.subheadline).multilineTextAlignment(.center)
+                    Spacer()
+                    Text("Connectes-toi pour voir l'état de ton forfait !").font(.subheadline).multilineTextAlignment(.center)
+                    
                 }.padding()
                 Spacer()
                 HStack {
@@ -143,7 +149,5 @@ struct ConsoView_Previews: PreviewProvider {
             ConsoView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
                 .previewDevice("iPhone SE (2nd generation)")
         }
-        
-        
     }
 }

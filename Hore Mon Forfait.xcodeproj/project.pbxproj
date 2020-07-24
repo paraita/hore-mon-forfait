@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,6 +43,7 @@
 		EDBA9A8B24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */; };
 		EDBA9A8C24B17A9B0064FA77 /* HMFProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */; };
 		EDBA9A8D24B17E5C0064FA77 /* HMFDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */; };
+		EDC698F024C5226A00ABEB98 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC698EF24C5226A00ABEB98 /* AdBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		EDB1659A24B7CE4C00AC0A2F /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
 		EDBA9A8824B178450064FA77 /* HMFDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFDateFormatter.swift; sourceTree = "<group>"; };
 		EDBA9A8A24B17A9B0064FA77 /* HMFProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMFProgressCircle.swift; sourceTree = "<group>"; };
+		EDC698EF24C5226A00ABEB98 /* AdBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBanner.swift; sourceTree = "<group>"; };
 		F976DC7FEE66E1CD40C17429 /* Pods_Hore_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hore_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,7 +222,6 @@
 				4AE72267C2561E61947591A0 /* Pods-Hore Mon ForfaitTests.debug.xcconfig */,
 				A0E46E9CECC976506C8CE4FA /* Pods-Hore Mon ForfaitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -266,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB1659A24B7CE4C00AC0A2F /* Hore Mon Forfait.entitlements */,
+				EDC698EF24C5226A00ABEB98 /* AdBanner.swift */,
 				ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */,
 				ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */,
 				ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */,
@@ -681,6 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDBA9A8924B178450064FA77 /* HMFDateFormatter.swift in Sources */,
+				EDC698F024C5226A00ABEB98 /* AdBanner.swift in Sources */,
 				ED6A3B2D24A32B9000134D1D /* Account.swift in Sources */,
 				ED6A3B2B24A2BD0600134D1D /* AccountView.swift in Sources */,
 				ED6A3B2F24A5598100134D1D /* Network.swift in Sources */,

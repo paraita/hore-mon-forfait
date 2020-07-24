@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         NotificationCenter.default.addObserver(self, selector: #selector(scheduleAppRefresh), name: UIScene.didEnterBackgroundNotification, object: nil)
         
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
         return true
     }
 
