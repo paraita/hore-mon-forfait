@@ -11,14 +11,18 @@ import GoogleMobileAds
 import UIKit
 
 final class AdBannerVC: UIViewControllerRepresentable {
+    
+    var bannerSize: CGSize
 
     func makeUIViewController(context: Context) -> UIViewController {
-        let view = GADBannerView(adSize: kGADAdSizeBanner)
+        let view = GADBannerView(adSize: GADAdSizeFromCGSize(self.bannerSize))
+        //let view = GADBannerView(adSize: kGADAdSizeBanner)
         let viewController = UIViewController()
         view.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         view.rootViewController = viewController
         viewController.view.addSubview(view)
-        viewController.view.frame = CGRect(origin: .zero, size: kGADAdSizeBanner.size)
+        //viewController.view.frame = CGRect(origin: .zero, size: size)
+        viewController.view.frame = CGRect(origin: .zero, size: self.bannerSize)
         view.load(GADRequest())
         return viewController
     }
@@ -26,13 +30,21 @@ final class AdBannerVC: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
         
     }
+    
+    init(bannerSize: CGSize) {
+        self.bannerSize = bannerSize
+    }
 }
 
 struct AdBanner: View {
+    
+    var width: CGFloat = 320
+    var height: CGFloat = 50
+    
     var body: some View {
         HStack {
             Spacer()
-            AdBannerVC().frame(width: 320, height: 50, alignment: .center)
+            AdBannerVC(bannerSize: CGSize(width: width, height: height)).frame(width: width, height: height, alignment: .center)
             Spacer()
         }
     }
@@ -40,6 +52,6 @@ struct AdBanner: View {
 
 struct AdBanner_Previews: PreviewProvider {
     static var previews: some View {
-        AdBanner()
+        AdBanner(width: 320, height: 50)
     }
 }

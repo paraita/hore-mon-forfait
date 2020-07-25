@@ -38,6 +38,16 @@ struct HMFProgressCircle: View {
     }
 }
 
+extension View {
+    func animate(using animation: Animation = Animation.easeInOut(duration: 2), _ action: @escaping () -> Void) -> some View {
+        return onAppear {
+            withAnimation(animation) {
+                action()
+            }
+        }
+    }
+}
+
 struct HMFProgressCircle_Previews: PreviewProvider {
     static var previews: some View {
         

@@ -30,65 +30,72 @@ struct ConsoView: View {
     // MARK: ---------- views ----------
     
     var connectedBody: some View {
-        VStack {
-            Text("Abonnement \(self.account.nomOffre)").font(.largeTitle).bold().multilineTextAlignment(.center)
-            HStack(alignment: .top) {
+        GeometryReader { proxy in
+            VStack {
+                Text("Abonnement \(self.account.nomOffre)")
+                    .font(.largeTitle)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                Text("Ligne \(self.account.numTel)")
+                    .font(.headline)
+                    .padding(.top)
+                Text("Dernière maj le \(self.dateFormatter.string(from: self.account.updateDate))")
+                    .italic()
+                    .multilineTextAlignment(.center)
+                    .font(.caption)
+                    .padding(.bottom)
                 HMFProgressCircle(progressValue: self.account.consoProgress)
                     .frame(width: 150.0, height: 150.0)
                     .padding(.horizontal, 20)
-                VStack(alignment: .center) {
-                    Text(String(format: "Tu as consommé %.1f/%.1f Go", self.account.consumed / 1024.0, self.account.credit / 1024.0))
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 10)
-                    Text(String(format: "Il te reste %.1f Go", self.account.remaining / 1024.0, self.account.credit / 1024.0))
-                        .multilineTextAlignment(.center)
-                    Button(action: {
-                        self.reloading = true
-                        self.client.dispatch(onSuccess: {
-                            response in
-                            self.account.update(with: response)
-                            //self.account.consumed = Double.random(in: 0...10000)
-                            //self.account.credit = 10000
-                            //self.account.remaining = self.account.credit - self.account.consumed
-                            self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
-                            self.reloading = false
-                        }, onFailure: {
-                            response, err in
-                            os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
-                            self.reloading = false
-                        })
-                    }, label: {
-                        if self.reloading {
-                            ActivityIndicator(isAnimating: .constant(true), style: .large)
-                        }
-                        else {
-                            Image(systemName: "arrow.clockwise.circle.fill")
+                    .padding(.bottom)
+                Text(String(format: "Tu as consommé %.1f/%.1f Go", self.account.consumed / 1024.0, self.account.credit / 1024.0))
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 10)
+                Text(String(format: "Il te reste %.1f Go", self.account.remaining / 1024.0, self.account.credit / 1024.0))
+                    .multilineTextAlignment(.center)
+                Button(action: {
+                    self.reloading = true
+                    self.client.dispatch(onSuccess: {
+                        response in
+                        self.account.update(with: response)
+                        //self.account.consumed = Double.random(in: 0...10000)
+                        //self.account.credit = 10000
+                        //self.account.remaining = self.account.credit - self.account.consumed
+                        self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
+                        self.reloading = false
+                    }, onFailure: { response, err in
+                        os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                        self.reloading = false
+                    })
+                }, label: {
+                    if self.reloading {
+                        ActivityIndicator(isAnimating: .constant(true), style: .large)
+                    }
+                    else {
+                        Image(systemName: "arrow.clockwise.circle.fill")
                             .resizable()
                             .frame(width: 40, height: 40)
-                            .foregroundColor(progressBarColor)
-                        }
-                    })
-                }.padding(.top, 10)
-            }.padding()
-            Text("Ligne \(self.account.numTel)").font(.headline)
-            Text("Dernière maj le \(self.dateFormatter.string(from: self.account.updateDate))").italic().multilineTextAlignment(.center).font(.caption)
-            Spacer()
-            AdBanner()
-        }.onAppear {
-            self.client.dispatch(onSuccess: {
-                response in
-                self.account.update(with: response)
-                // mock
-                //self.account.consumed = Double.random(in: 0...10000)
-                //self.account.credit = 10000
-                //self.account.remaining = self.account.credit - self.account.consumed
-                self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
-                self.reloading = false
-            }, onFailure: {
+                            .foregroundColor(self.progressBarColor)
+                    }
+                })
+                Spacer()
+                AdBanner(width: proxy.size.width, height: proxy.size.width / 6.4)
+            }.onAppear {
+                self.client.dispatch(onSuccess: {
+                    response in
+                    self.account.update(with: response)
+                    // mock
+                    //self.account.consumed = Double.random(in: 0...10000)
+                    //self.account.credit = 10000
+                    //self.account.remaining = self.account.credit - self.account.consumed
+                    self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
+                    self.reloading = false
+                }, onFailure: {
                 response, err in
-                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
-                self.reloading = false
-            })
+                    os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                    self.reloading = false
+                })
+            }
         }
     }
     
