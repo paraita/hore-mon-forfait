@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "deal_with_it-watchos-notification-center-48px.png",
+      "filename" : "watch_notification_center24x24@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -9,7 +9,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "deal_with_it-watchos-notification-center-55px.png",
+      "filename" : "watch_notification_center27.5x27.5@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -17,21 +17,21 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "deal_with_it-watchos-companion-settings-58px.png",
+      "filename" : "watch_companion_settings29x29@2x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "deal_with_it-watchos-companion-settings-87px.png",
+      "filename" : "watch_companion_settings29x29@3x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "deal_with_it-watchos-home-screen-80px.png",
+      "filename" : "watch_home40x40@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -39,7 +39,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "deal_with_it-watchos-home-screen-88px.png",
+      "filename" : "watch_home44x44@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -47,7 +47,7 @@
       "subtype" : "40mm"
     },
     {
-      "filename" : "deal_with_it-watchos-home-screen-100px.png",
+      "filename" : "watch_home50x50@2x.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -55,7 +55,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "deal_with_it-watchos-short-look-172px.png",
+      "filename" : "watch_short_look86x86@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -63,7 +63,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "deal_with_it-watchos-short-look-196px.png",
+      "filename" : "watch_short_look98x98@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -71,7 +71,7 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "deal_with_it-watchos-short-look-216px.png",
+      "filename" : "watch_short_look108x108@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -79,7 +79,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "deal_with_it-watchos-app-store-1024px.png",
+      "filename" : "watch_appstore1024x1024.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

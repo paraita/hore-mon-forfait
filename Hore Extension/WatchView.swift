@@ -19,18 +19,55 @@ struct WatchView: View {
     }
     
     var body: some View {
+        demoBody
+    }
+    
+    var realBody: some View {
         ScrollView {
             VStack {
-                Text(account.nomOffre).bold()
+                Text("Ligne \(account.numTel)").bold()
                 HMFProgressCircle(lineWidth: 15.0, progressValue: account.consoProgress)
                     .frame(width: 120, height: 120)
                     .padding()
                 Spacer()
                 Divider()
                 VStack(alignment: .leading) {
-                    Text("Ligne \(account.numTel)")
                     Text(String(format: "Tu as consommé %.1f Go", account.consumed / 1024.0))
                     Text(String(format: "Il te reste %.1f Go", account.remaining / 1024.0))
+                }
+                Divider()
+                Text("Dernière maj le \(dateFormatter.string(from: account.updateDate))")
+                    .font(.footnote).italic().multilineTextAlignment(.center)
+            }
+        }
+        .onAppear {
+            self.client.dispatch(onSuccess: {
+                response in
+                os_log("fetching data from Vini successful", type: .debug)
+                self.account.update(with: response)
+                let CLKServer = CLKComplicationServer.sharedInstance()
+                for complication in CLKServer.activeComplications ?? [] {
+                    CLKServer.reloadTimeline(for: complication)
+                }
+            }, onFailure: {
+                response, err in
+                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+            })
+        }
+    }
+    
+    var demoBody: some View {
+        ScrollView {
+            VStack {
+                Text("Ligne 87123456").bold()
+                HMFProgressCircle(lineWidth: 15.0, progressValue: 0.10)
+                    .frame(width: 120, height: 120)
+                    .padding()
+                Spacer()
+                Divider()
+                VStack(alignment: .leading) {
+                    Text("Tu as consommé 1.0 Go")
+                    Text("Il te reste 9.0 Go")
                 }
                 Divider()
                 Text("Dernière maj le \(dateFormatter.string(from: account.updateDate))")

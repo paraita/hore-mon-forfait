@@ -25,7 +25,7 @@ struct AccountView: View {
     var colorText: Color = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
     var colorBannerBackground: Color = Color(#colorLiteral(red: 0.9993683696, green: 0.230212003, blue: 0.1864413619, alpha: 1))
     var colorBannerForeground: Color = Color(#colorLiteral(red: 0.6817478538, green: 0.1464989185, blue: 0.1279250383, alpha: 1))
-    var colorButtonBackground: Color = Color(#colorLiteral(red: 0.9151532054, green: 0.195348233, blue: 0.3076925874, alpha: 1))
+    var colorButtonBackground: Color = Color(#colorLiteral(red: 0.7260068059, green: 0.1090376303, blue: 0.09677212685, alpha: 1))
     var colorButtonForeground: Color = Color(#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1))
     var colorButtonNotConnected: Color = Color(#colorLiteral(red: 0.9151532054, green: 0.195348233, blue: 0.3076925874, alpha: 1))
     var colorButtonConnecting: Color = Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
@@ -105,7 +105,8 @@ struct AccountView: View {
                             // not configured
                             self.connectionFailed = false
                             self.isConnecting = true
-                            let client = APIConsoRequest(msisdn: self.account.numTel, password: self.account.password)
+                            //let client = APIConsoRequest(msisdn: self.account.numTel, password: self.account.password)
+                            let client = APIConsoRequest(msisdn: "87344266", password: self.account.password)
                             client.dispatch(onSuccess: {
                                 response in
                                 self.account.update(with: response)

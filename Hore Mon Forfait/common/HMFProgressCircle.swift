@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HMFProgressCircle: View {
     
-    var progressBarColor: Color = Color(#colorLiteral(red: 0.9151532054, green: 0.195348233, blue: 0.3076925874, alpha: 1))
+    var progressBarColor: Color = Color(#colorLiteral(red: 0.7260068059, green: 0.1090376303, blue: 0.09677212685, alpha: 1))
     var lineWidth: Float = 20.0
     var progressValue: Float
     
