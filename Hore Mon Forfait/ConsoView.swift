@@ -195,7 +195,7 @@ struct ConsoView: View {
     var body: some View {
         VStack {
             if self.account.isConnected {
-                demoConnectedBody
+                connectedBody
             }
             else {
                 notConnectedBody

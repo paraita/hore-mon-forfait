@@ -19,7 +19,7 @@ struct WatchView: View {
     }
     
     var body: some View {
-        demoBody
+        realBody
     }
     
     var realBody: some View {
