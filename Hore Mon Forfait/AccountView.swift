@@ -115,7 +115,7 @@ struct AccountView: View {
                                 self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                             }, onFailure: {
                                 response, err in
-                                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                                os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                                 self.isConnecting = false
                                 self.connectionFailed = true
                             })
@@ -184,7 +184,7 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+        AccountView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
             .previewDevice(PreviewDevice.init(stringLiteral: "iPhone SE"))
     }
 }

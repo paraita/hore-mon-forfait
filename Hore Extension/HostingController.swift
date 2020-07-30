@@ -58,6 +58,6 @@ class HostingController: WKHostingController<WatchView>, WCSessionDelegate {
 
 struct HostingController_Previews: PreviewProvider {
     static var previews: some View {
-        WatchView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+        WatchView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
     }
 }

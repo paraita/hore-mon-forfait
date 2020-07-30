@@ -33,7 +33,7 @@ class WatchConnectivityHandler: NSObject, WCSessionDelegate {
                         let jsonPayload = try! JSONEncoder().encode(account)
                         try self.session.updateApplicationContext(["account": jsonPayload])
                     } catch let error as NSError {
-                        os_log("error while fetching data from Vini: %@", type: .error, error.description)
+                        os_log("error while fetching data from the mobile provider: %@", type: .error, error.description)
                     }
                 }
                 else {

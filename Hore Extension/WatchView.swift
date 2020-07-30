@@ -43,7 +43,7 @@ struct WatchView: View {
         .onAppear {
             self.client.dispatch(onSuccess: {
                 response in
-                os_log("fetching data from Vini successful", type: .debug)
+                os_log("fetched data successfully", type: .debug)
                 self.account.update(with: response)
                 let CLKServer = CLKComplicationServer.sharedInstance()
                 for complication in CLKServer.activeComplications ?? [] {
@@ -51,7 +51,7 @@ struct WatchView: View {
                 }
             }, onFailure: {
                 response, err in
-                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                os_log("error fetching info: %@", type: .debug, err.localizedDescription)
             })
         }
     }
@@ -77,7 +77,7 @@ struct WatchView: View {
         .onAppear {
             self.client.dispatch(onSuccess: {
                 response in
-                os_log("fetching data from Vini successful", type: .debug)
+                os_log("fetched data successfully", type: .debug)
                 self.account.update(with: response)
                 let CLKServer = CLKComplicationServer.sharedInstance()
                 for complication in CLKServer.activeComplications ?? [] {
@@ -85,7 +85,7 @@ struct WatchView: View {
                 }
             }, onFailure: {
                 response, err in
-                os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                os_log("error fetching info: %@", type: .debug, err.localizedDescription)
             })
         }
     }
@@ -93,6 +93,6 @@ struct WatchView: View {
 
 struct WatchView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 30500, remaining: 200, credit: 30700))
+        WatchView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 30500, remaining: 200, credit: 30700))
     }
 }

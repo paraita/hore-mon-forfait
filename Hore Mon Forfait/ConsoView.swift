@@ -62,7 +62,7 @@ struct ConsoView: View {
                         self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                         self.reloading = false
                     }, onFailure: { response, err in
-                        os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                        os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                         self.reloading = false
                     })
                 }, label: {
@@ -90,7 +90,7 @@ struct ConsoView: View {
                     self.reloading = false
                 }, onFailure: {
                 response, err in
-                    os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                    os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                     self.reloading = false
                 })
             }
@@ -129,7 +129,7 @@ struct ConsoView: View {
                         self.watchConnectivityHandler.sendStuffToTheWatch(self.account)
                         self.reloading = false
                     }, onFailure: { response, err in
-                        os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                        os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                         self.reloading = false
                     })
                 }, label: {
@@ -157,7 +157,7 @@ struct ConsoView: View {
                     self.reloading = false
                 }, onFailure: {
                 response, err in
-                    os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                    os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                     self.reloading = false
                 })
             }
@@ -209,16 +209,16 @@ struct ConsoView_Previews: PreviewProvider {
         
         Group {
             
-            ConsoView(account: Account(isConnected: false, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+            ConsoView(account: Account(isConnected: false, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
                 .previewDevice("iPhone 11 Pro Max")
             
-            ConsoView(account: Account(isConnected: false, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+            ConsoView(account: Account(isConnected: false, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
                 .previewDevice("iPhone SE (2nd generation)")
             
-            ConsoView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+            ConsoView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
                 .previewDevice("iPhone 11 Pro Max")
             
-            ConsoView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Vini Pa Dourmir", consumed: 5569, remaining: 25131, credit: 30700))
+            ConsoView(account: Account(isConnected: true, numTel: "12345678", nomOffre: "Offre téléphone", consumed: 5569, remaining: 25131, credit: 30700))
                 .previewDevice("iPhone SE (2nd generation)")
         }
     }

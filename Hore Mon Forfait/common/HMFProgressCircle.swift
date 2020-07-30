@@ -54,7 +54,7 @@ struct HMFProgressCircle_Previews: PreviewProvider {
         Group {
             ScrollView {
                 VStack {
-                    Text("Vini Open 12H").bold()
+                    Text("Offre téléphone").bold()
                     HMFProgressCircle(lineWidth: 15.0, progressValue: 0.01)
                         .frame(width: 120, height: 120)
                     Text("Dernière maj le 04 juillet 2020 à 18:42").font(.footnote).italic()
@@ -64,7 +64,7 @@ struct HMFProgressCircle_Previews: PreviewProvider {
             
             ScrollView {
                 VStack {
-                    Text("Vini Open 12H").bold()
+                    Text("Offre téléphone").bold()
                     HMFProgressCircle(lineWidth: 15.0, progressValue: 0.99)
                         .frame(width: 120, height: 120)
                     Text("Dernière maj le 04 juillet 2020 à 18:42").font(.footnote).italic()

@@ -45,7 +45,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let client = APIConsoRequest(msisdn: account.numTel, password: account.password)
         client.dispatch(onSuccess: {
             response in
-            os_log("successfully fetched data from Vini", type: .debug)
+            os_log("successfully fetched data", type: .debug)
             account.update(with: response)
             //account.consumed = Double.random(in: 0...10000)
             //account.credit = 10000
@@ -53,7 +53,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             NotificationCenter.default.post(name:NSNotification.Name("update-ta-race"), object: nil)
         }, onFailure: {
             response, err in
-            os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+            os_log("error fetching info: %@", type: .debug, err.localizedDescription)
             print(err)
         })
         
@@ -86,7 +86,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                     
                 }, onFailure: {
                     response, err in
-                    os_log("error fetching info from Vini: %@", type: .debug, err.localizedDescription)
+                    os_log("error fetching info: %@", type: .debug, err.localizedDescription)
                     self.scheduleBackgroundRefreshTasks()
                     backgroundTask.setTaskCompletedWithSnapshot(false)
                 })

@@ -27,7 +27,7 @@
 		ED6A3B3424ABF5F200134D1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */; };
 		ED6A3B3B24AC743600134D1D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B3924AC743600134D1D /* Interface.storyboard */; };
 		ED6A3B3D24AC743700134D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B3C24AC743700134D1D /* Assets.xcassets */; };
-		ED6A3B4424AC743700134D1D /* Hore Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED6A3B4324AC743700134D1D /* Hore Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED6A3B4424AC743700134D1D /* Paraita! Hore Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED6A3B4324AC743700134D1D /* Paraita! Hore Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED6A3B4B24AC743700134D1D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4A24AC743700134D1D /* HostingController.swift */; };
 		ED6A3B4D24AC743700134D1D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4C24AC743700134D1D /* ExtensionDelegate.swift */; };
 		ED6A3B4F24AC743700134D1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B4E24AC743700134D1D /* NotificationController.swift */; };
@@ -35,7 +35,7 @@
 		ED6A3B5324AC743700134D1D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B5224AC743700134D1D /* ComplicationController.swift */; };
 		ED6A3B5524AC743800134D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B5424AC743800134D1D /* Assets.xcassets */; };
 		ED6A3B5824AC743800134D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3B5724AC743800134D1D /* Preview Assets.xcassets */; };
-		ED6A3B5D24AC743800134D1D /* Hore.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED6A3B3724AC743600134D1D /* Hore.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED6A3B5D24AC743800134D1D /* Paraita! Hore Mon Forfait.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED6A3B3724AC743600134D1D /* Paraita! Hore Mon Forfait.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED6A3B6724ADA2D900134D1D /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B6624ADA2D900134D1D /* WatchView.swift */; };
 		ED6A3B6824ADA4A400134D1D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B2C24A32B9000134D1D /* Account.swift */; };
 		ED6A3B6A24AE973300134D1D /* WatchConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3B6924AE973300134D1D /* WatchConnectivityHandler.swift */; };
@@ -94,7 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				ED6A3B4424AC743700134D1D /* Hore Extension.appex in Embed App Extensions */,
+				ED6A3B4424AC743700134D1D /* Paraita! Hore Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +105,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				ED6A3B5D24AC743800134D1D /* Hore.app in Embed Watch Content */,
+				ED6A3B5D24AC743800134D1D /* Paraita! Hore Mon Forfait.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,7 +125,7 @@
 		DE9D9A4A8E511724FC7B3B17 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CC402B37BFB5A2602364E4 /* Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig"; path = "Target Support Files/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests/Pods-Hore Mon Forfait-Hore Mon ForfaitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ED1EB67824B7D5EB00F19F6E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A3AF724A2BB0E00134D1D /* Paraita! Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paraita! Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3AFA24A2BB0E00134D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6A3AFC24A2BB0E00134D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED6A3AFE24A2BB0E00134D1D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -144,11 +144,11 @@
 		ED6A3B2E24A5598100134D1D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		ED6A3B3124AAAA4200134D1D /* ConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoView.swift; sourceTree = "<group>"; };
 		ED6A3B3324ABF5F200134D1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		ED6A3B3724AC743600134D1D /* Hore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A3B3724AC743600134D1D /* Paraita! Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paraita! Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3B3A24AC743600134D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		ED6A3B3C24AC743700134D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6A3B3E24AC743700134D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED6A3B4324AC743700134D1D /* Hore Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hore Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6A3B4324AC743700134D1D /* Paraita! Hore Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paraita! Hore Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3B4A24AC743700134D1D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		ED6A3B4C24AC743700134D1D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		ED6A3B4E24AC743700134D1D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -254,11 +254,11 @@
 		ED6A3AF824A2BB0E00134D1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */,
+				ED6A3AF724A2BB0E00134D1D /* Paraita! Hore Mon Forfait.app */,
 				ED6A3B0D24A2BB0F00134D1D /* Hore Mon ForfaitTests.xctest */,
 				ED6A3B1824A2BB0F00134D1D /* Hore Mon ForfaitUITests.xctest */,
-				ED6A3B3724AC743600134D1D /* Hore.app */,
-				ED6A3B4324AC743700134D1D /* Hore Extension.appex */,
+				ED6A3B3724AC743600134D1D /* Paraita! Hore Mon Forfait.app */,
+				ED6A3B4324AC743700134D1D /* Paraita! Hore Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 			);
 			name = "Hore Mon Forfait";
 			productName = "Hore Mon Forfait";
-			productReference = ED6A3AF724A2BB0E00134D1D /* Hore Mon Forfait.app */;
+			productReference = ED6A3AF724A2BB0E00134D1D /* Paraita! Hore Mon Forfait.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ED6A3B0C24A2BB0F00134D1D /* Hore Mon ForfaitTests */ = {
@@ -435,7 +435,7 @@
 			);
 			name = Hore;
 			productName = Hore;
-			productReference = ED6A3B3724AC743600134D1D /* Hore.app */;
+			productReference = ED6A3B3724AC743600134D1D /* Paraita! Hore Mon Forfait.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		ED6A3B4224AC743700134D1D /* Hore Extension */ = {
@@ -453,7 +453,7 @@
 			);
 			name = "Hore Extension";
 			productName = "Hore Extension";
-			productReference = ED6A3B4324AC743700134D1D /* Hore Extension.appex */;
+			productReference = ED6A3B4324AC743700134D1D /* Paraita! Hore Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -896,6 +896,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Mon Forfait/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				ENABLE_PREVIEWS = YES;
@@ -905,7 +906,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paraita! Hore Mon Forfait";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -918,6 +919,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Mon Forfait/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				ENABLE_PREVIEWS = YES;
@@ -927,7 +929,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paraita! Hore Mon Forfait";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1027,6 +1029,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				ENABLE_PREVIEWS = YES;
@@ -1037,7 +1040,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "Paraita! Hore Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1052,6 +1055,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Hore Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				ENABLE_PREVIEWS = YES;
@@ -1062,7 +1066,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "Paraita! Hore Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1077,11 +1081,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				IBSC_MODULE = Hore_Extension;
 				INFOPLIST_FILE = Hore/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paraita! Hore Mon Forfait";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1096,11 +1101,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				IBSC_MODULE = Hore_Extension;
 				INFOPLIST_FILE = Hore/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paraita! Hore Mon Forfait";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
